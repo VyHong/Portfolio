@@ -3,7 +3,7 @@ const Work = (props) => (
     data-aos="fade-right"
     className="card shadow-sm mb-1 bg-white rounded"
     style={{
-      width: "100%",
+      width: "90%",
       textAlign: "left",
       marginTop: 10,
     }}
