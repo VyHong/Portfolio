@@ -73,7 +73,6 @@ export default function Home() {
                 <br /> at Technical University München
               </h5>
             </span>
-
             <span style={{ alignSelf: "center" }}>
               <Image src={profil} alt="Profil" width={200} height={200} />
             </span>
@@ -102,11 +101,11 @@ export default function Home() {
             Education
           </h2>
           {cv.education.map((item) => (
-            <Education data-Aos="fade-right" key={item.headline} {...item} />
+            <Education key={item.headline} {...item} />
           ))}
         </div>
 
-        <div id="skills" data-Aos="fade-up" className={styles.skillsContainer}>
+        <div id="skills" data-aos="fade-up" className={styles.skillsContainer}>
           <h2 style={{ textAlign: "center", marginBottom: 20 }}>Skills</h2>
           <div className={styles.skillCategoryContainer}>
             <div
