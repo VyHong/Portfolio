@@ -10,7 +10,7 @@ const Header = (props) => (
       href="#"
       style={{ color: "#eeeae3" }}
     >
-      <Image src={monogram} alt="" width="35" height="30" className="rounded" />
+      <Image src={monogram} alt="" width="40" height="35" className="rounded" />
     </a>
     <ul className="nav  justify-content-end ">
       <li className="nav-item ">
