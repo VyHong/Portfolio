@@ -1,20 +1,24 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
+
+import cv from "./cv.json";
+import profil from "../assets/photos/profil.jpeg";
+import styles from "../styles/Home.module.css";
+
 import Education from "../components/education";
 import Work from "../components/work";
 import Skills from "../components/skills";
-import cv from "./cv.json";
-import profil from "../assets/photos/profil.jpeg";
-import monogram from "../assets/photos/Monogram.png";
+import Header from "../components/header";
+
 export default function Home() {
   useEffect(() => {
     //import("bootstrap/dist/js/bootstrap");
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 500 });
   }, []);
   return (
     <div className={styles.container}>
@@ -26,45 +30,7 @@ export default function Home() {
 
       <main id="home" className={styles.main}>
         <div className={styles.topContainer}>
-          <div className={styles.headerContainer}>
-            <a className="navbar-brand" href="#">
-              <Image
-                src={monogram}
-                alt=""
-                width="30"
-                height="24"
-                className="rounded align-bottom"
-              />
-              Vy Hong
-            </a>
-            <ul className="nav  justify-content-end ">
-              <li className="nav-item ">
-                <a
-                  className="nav-link active link-dark"
-                  aria-current="page"
-                  href="#home"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link link-dark" href="#work">
-                  Work
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link link-dark" href="#education">
-                  Education
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link link-dark" href="#skills">
-                  Skills
-                </a>
-              </li>
-            </ul>
-          </div>
-
+          <Header />
           <div className={styles.topContent}>
             <span>
               <h1>Hello, I am Vy </h1>
