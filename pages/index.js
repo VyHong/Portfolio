@@ -27,38 +27,38 @@ export default function Home() {
       <main id="home" className={styles.main}>
         <div className={styles.topContainer}>
           <div className={styles.headerContainer}>
-            <a class="navbar-brand" href="#">
+            <a className="navbar-brand" href="#">
               <Image
                 src={monogram}
                 alt=""
                 width="30"
                 height="24"
-                class="rounded align-bottom"
+                className="rounded align-bottom"
               />
               Vy Hong
             </a>
-            <ul class="nav  justify-content-end ">
-              <li class="nav-item ">
+            <ul className="nav  justify-content-end ">
+              <li className="nav-item ">
                 <a
-                  class="nav-link active link-dark"
+                  className="nav-link active link-dark"
                   aria-current="page"
                   href="#home"
                 >
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#work">
+              <li className="nav-item">
+                <a className="nav-link link-dark" href="#work">
                   Work
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#education">
+              <li className="nav-item">
+                <a className="nav-link link-dark" href="#education">
                   Education
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#skills">
+              <li className="nav-item">
+                <a className="nav-link link-dark" href="#skills">
                   Skills
                 </a>
               </li>
