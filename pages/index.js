@@ -13,7 +13,7 @@ import profil from "../assets/photos/profil.jpeg";
 import monogram from "../assets/photos/Monogram.png";
 export default function Home() {
   useEffect(() => {
-    //  import("bootstrap/dist/js/bootstrap");
+    //import("bootstrap/dist/js/bootstrap");
     Aos.init({ duration: 2000 });
   }, []);
   return (
@@ -24,22 +24,47 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main id="home" className={styles.main}>
         <div className={styles.topContainer}>
-          <nav className="navbar ">
-            <div className="container-fluid">
-              <a className="navbar-brand" href="#">
-                <Image
-                  src={monogram}
-                  alt=""
-                  width="30"
-                  height="24"
-                  class="d-inline-block align-text-top"
-                />
-                Vy Hong
-              </a>
-            </div>
-          </nav>
+          <div className={styles.headerContainer}>
+            <a class="navbar-brand" href="#">
+              <Image
+                src={monogram}
+                alt=""
+                width="30"
+                height="24"
+                class="rounded align-bottom"
+              />
+              Vy Hong
+            </a>
+            <ul class="nav  justify-content-end ">
+              <li class="nav-item ">
+                <a
+                  class="nav-link active link-dark"
+                  aria-current="page"
+                  href="#home"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#work">
+                  Work
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#education">
+                  Education
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#skills">
+                  Skills
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <div className={styles.topContent}>
             <span>
               <h1>Hello, I am Vy </h1>
@@ -55,7 +80,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.workingContainer}>
+        <div id="work" className={styles.workingContainer}>
           <h2
             style={{
               marginBottom: 20,
@@ -68,7 +93,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className={styles.educationContainer}>
+        <div id="education" className={styles.educationContainer}>
           <h2
             style={{
               marginBottom: 20,
@@ -81,7 +106,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div data-Aos="fade-up" className={styles.skillsContainer}>
+        <div id="skills" data-Aos="fade-up" className={styles.skillsContainer}>
           <h2 style={{ textAlign: "center", marginBottom: 20 }}>Skills</h2>
           <div className={styles.skillCategoryContainer}>
             <div

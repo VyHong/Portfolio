@@ -23,12 +23,21 @@
 }
 
 .topContent{
-  padding: 0rem 3rem;
+  padding: 1rem 3rem;
   width: 100%;
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.headerContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px outset rgb(218, 196, 196);
+  padding: 0.5rem;
 }
 
 .workingContainer{
