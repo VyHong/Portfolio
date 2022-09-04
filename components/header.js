@@ -9,10 +9,10 @@ const Header = (props) => (
       className="navbar-brand fw-bold d-flex flex-row align-text-bottom"
       href="#"
     >
-      <Image src={monogram} alt="" width="45" height="30" className="rounded" />{" "}
-      <h3 className="p-1 " style={{ color: "#eeeae3" }}>
+      <Image src={monogram} alt="" width="30" height="25" className="rounded" />{" "}
+      <h4 className="p-1 " style={{ color: "#eeeae3" }}>
         Vy Hong
-      </h3>
+      </h4>
     </a>
     <ul className="nav  justify-content-end ">
       <li className="nav-item ">
