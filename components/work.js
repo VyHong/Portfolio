@@ -3,14 +3,14 @@ const Work = (props) => (
     data-aos="fade-right"
     className="card shadow-sm mb-1 bg-white rounded"
     style={{
-      width: "80%",
+      width: "100%",
       textAlign: "left",
       marginTop: 10,
     }}
   >
     <div className="card-body ">
       <h5 className="card-title">{props.name}</h5>
-      <h6 className="card-subtitle mb-2 text-muted">{props.postion}</h6>
+      <h6 className="card-subtitle mb-2 text-muted">{props.position}</h6>
       <h5 className="card-subtitle mb-2 text-muted">
         {props.location}, {props.date}
       </h5>

@@ -14,7 +14,7 @@
       "location": "Kleinostheim",
       "position": "Temporary Worker",
       "date": "August 2018 – August 2019",
-      "activities": "Part time worker in system gastronomy"
+      "activities": "Daily tasks in system gastronomy"
     },
 
     {
@@ -52,18 +52,22 @@
 
   "skills":{
     "coding":[
-      {"name":"Java","level": "Very Good"},
-      {"name":"Phython","level": "Very Good"},
-      {"name":"SQL","level": "Very Good"},
-      {"name":"R","level": "Very Good"},
-      {"name":"JavaScript","level": "Very Good"}
+      {"name":"Java","level": "Fluent"},
+      {"name":"Phython","level": "Fluent"},
+      {"name":"JavaScript","level": "Fluent"},
+      {"name":"SQL","level": "Proficient"},
+      {"name":"R","level": "Proficient"}
+      
     ],
     "languages":[
       {"name":"German","level": "Native"},
       {"name":"English","level": "C1"}
     ],
     "EDV":[
-      {"name":"Microsoft Office","level": "Very Good"}
+      {"name":"Microsoft Word","level": "Very Good"},
+      {"name":"Microsoft Excel","level": " Good"},
+      {"name":"Microsoft Powerpoint","level": " Good"},
+      {"name":"Microsoft Tableau","level": "Very Good"}
     ]
   }
     

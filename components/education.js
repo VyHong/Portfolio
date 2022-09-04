@@ -3,7 +3,7 @@ const Education = (props) => (
     data-aos="fade-left"
     className="card shadow-sm mb-1 bg-white rounded"
     style={{
-      width: "80%",
+      width: "100%",
       textAlign: "left",
       marginTop: 10,
     }}
