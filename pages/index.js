@@ -40,7 +40,13 @@ export default function Home() {
               </h5>
             </span>
             <span style={{ alignSelf: "center" }}>
-              <Image src={profil} alt="Profil" width={200} height={200} />
+              <Image
+                src={profil}
+                alt="Profil"
+                width={200}
+                height={200}
+                className="rounded"
+              />
             </span>
           </div>
         </div>
