@@ -10,7 +10,7 @@ import Work from "../components/work";
 import Skills from "../components/skills";
 import cv from "./cv.json";
 import profil from "../assets/photos/profil.jpeg";
-
+import monogram from "../assets/photos/Monogram.png";
 export default function Home() {
   useEffect(() => {
     //  import("bootstrap/dist/js/bootstrap");
@@ -26,17 +26,33 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.topContainer}>
-          <span>
-            <h1>Hello, I am Vy Hong </h1>
-            <h5 className="text-muted">
-              Student in Information Systems
-              <br /> at Technical University München
-            </h5>
-          </span>
+          <nav className="navbar ">
+            <div className="container-fluid">
+              <a className="navbar-brand" href="#">
+                <Image
+                  src={monogram}
+                  alt=""
+                  width="30"
+                  height="24"
+                  class="d-inline-block align-text-top"
+                />
+                Vy Hong
+              </a>
+            </div>
+          </nav>
+          <div className={styles.topContent}>
+            <span>
+              <h1>Hello, I am Vy </h1>
+              <h5 className="text-muted">
+                Student in Information Systems
+                <br /> at Technical University München
+              </h5>
+            </span>
 
-          <span style={{ alignSelf: "flex-end" }}>
-            <Image src={profil} alt="Profil" width={200} height={200} />
-          </span>
+            <span style={{ alignSelf: "center" }}>
+              <Image src={profil} alt="Profil" width={200} height={200} />
+            </span>
+          </div>
         </div>
 
         <div className={styles.workingContainer}>
