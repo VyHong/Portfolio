@@ -48,5 +48,25 @@
       "date": "September 2011 –  Juli 2019",
       "description": ""
     }
-  ]
+  ],
+
+  "skills":{
+    "coding":[
+      {"name":"Java","level": "Very Good"},
+      {"name":"Phython","level": "Very Good"},
+      {"name":"SQL","level": "Very Good"},
+      {"name":"R","level": "Very Good"},
+      {"name":"JavaScript","level": "Very Good"}
+    ],
+    "languages":[
+      {"name":"German","level": "Native"},
+      {"name":"English","level": "C1"}
+    ],
+    "EDV":[
+      {"name":"Microsoft Office","level": "Very Good"}
+    ]
+  }
+    
+
+  
 }

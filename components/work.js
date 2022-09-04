@@ -1,6 +1,6 @@
 const Work = (props) => (
   <div
-    className="card "
+    className="card shadow-sm mb-1 bg-white rounded"
     style={{
       width: "50%",
       textAlign: "left",

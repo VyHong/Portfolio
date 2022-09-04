@@ -4,7 +4,9 @@ import styles from "../styles/Home.module.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Education from "../components/education";
 import Work from "../components/work";
+import Skills from "../components/skills";
 import cv from "./cv.json";
+import profil from "../assets/photos/profil.jpeg";
 //useEffect(() => {
 //  import("bootstrap/dist/js/bootstrap");
 //}, []);
@@ -20,11 +22,17 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.topContainer}>
-          <h1>Hello, I am Vy Hong </h1>
-          <h5 className="text-muted">
-            Student in Information Systems
-            <br /> at Technical University München
-          </h5>
+          <span>
+            <h1>Hello, I am Vy Hong </h1>
+            <h5 className="text-muted">
+              Student in Information Systems
+              <br /> at Technical University München
+            </h5>
+          </span>
+
+          <span style={{ alignSelf: "flex-end" }}>
+            <Image src={profil} alt="Profil" width={200} height={200} />
+          </span>
         </div>
 
         <div className={styles.workingContainer}>
@@ -55,6 +63,26 @@ export default function Home() {
 
         <div className={styles.skillsContainer}>
           <h2 style={{ textAlign: "center" }}>Skills</h2>
+          <div className={styles.skillCategoryContainer}>
+            <div class="card-colums">
+              <h4>Coding</h4>
+              {cv.skills.coding.map((item) => (
+                <Skills key={item.headline} {...item} />
+              ))}
+            </div>
+            <div className="card-colums">
+              <h4>Language</h4>
+              {cv.skills.languages.map((item) => (
+                <Skills key={item.headline} {...item} />
+              ))}
+            </div>
+            <div className="card-colums">
+              <h4>EDV</h4>
+              {cv.skills.EDV.map((item) => (
+                <Skills key={item.headline} {...item} />
+              ))}
+            </div>
+          </div>
         </div>
       </main>
 
