@@ -1,0 +1,11 @@
+.topContainer {
+    font-size: larger;
+    color:"red";
+    background-color: blue;
+    flex:1;
+}
+.bodyContainer {
+    font-size: larger;
+    color:"red";
+    background-color: rgb(67, 67, 133);
+}

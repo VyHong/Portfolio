@@ -1,0 +1,52 @@
+{
+  "name": "Vy Hong",
+  "work": [
+    {
+      "name": "Technical University of Munich",
+      "location": "Munich",
+      "position": "Academic Tutor",
+      "date": "October 2020 – October 2021",
+      "activities": "Math Preparation Course, Introduction to Informatics, Practica Basics of Programming and Introduction into Software Engineering"
+    },
+
+    {
+      "name": "McDonald's Deutschland GmbH",
+      "location": "Kleinostheim",
+      "position": "Temporary Worker",
+      "date": "August 2018 – August 2019",
+      "activities": "Part time worker in systemgastronomy"
+    },
+
+    {
+      "name": "Audi AG",
+      "location": "Ingolstadt",
+      "position": "Student Intern",
+      "date": "July 2016",
+      "activities": "Industrie 4.0 and Internet of Things"
+    }
+  ],
+
+  "education": [
+    {
+      "name": "Technical University of Munich",
+      "location": "Munich",
+      "degree": "B.Sc. Information Systems",
+      "date": "October 2019 – Now",
+      "description": "Focus on technical and mathematical field"
+    },
+    {
+      "name": "Universidad Pompeu Fabra",
+      "location": "Barcelona",
+      "degree": "B.Sc. Information Systems",
+      "date": "September 2021 – June 2022",
+      "description": "Application subject mathematics"
+    },
+    {
+      "name": "Gymnasium Friedrich Dessauer Gymnasium",
+      "location": "Aschaffenburg",
+      "degree": "Abitur",
+      "date": "September 2011 –  Juli 2019",
+      "description": ""
+    }
+  ]
+}
