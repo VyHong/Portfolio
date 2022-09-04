@@ -12,7 +12,7 @@ const Header = (props) => (
         width="30"
         height="24"
         className="rounded align-bottom"
-      />
+      />{" "}
       Vy Hong
     </a>
     <ul className="nav  justify-content-end ">
