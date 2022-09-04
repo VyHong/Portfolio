@@ -65,7 +65,7 @@ export default function Home() {
           <h2 style={{ textAlign: "center", marginBottom: 20 }}>Skills</h2>
           <div className={styles.skillCategoryContainer}>
             <div
-              class="card-colums"
+              className="card-colums"
               style={{
                 width: "13rem",
               }}
