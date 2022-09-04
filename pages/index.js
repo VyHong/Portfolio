@@ -90,13 +90,13 @@ export default function Home() {
               className="card-colums"
               style={{
                 width: "13rem",
+                flex: 1,
                 marginLeft: "1rem",
                 marginRight: "1rem",
-                flex: 1,
               }}
             >
-              <h4>Language</h4>
-              {cv.skills.languages.map((item) => (
+              <h4>EDV</h4>
+              {cv.skills.EDV.map((item) => (
                 <Skills key={item.headline} {...item} />
               ))}
             </div>
@@ -104,11 +104,12 @@ export default function Home() {
               className="card-colums"
               style={{
                 width: "13rem",
+
                 flex: 1,
               }}
             >
-              <h4>EDV</h4>
-              {cv.skills.EDV.map((item) => (
+              <h4>Language</h4>
+              {cv.skills.languages.map((item) => (
                 <Skills key={item.headline} {...item} />
               ))}
             </div>
