@@ -1,5 +1,6 @@
 const Work = (props) => (
   <div
+    data-Aos="fade-right"
     className="card shadow-sm mb-1 bg-white rounded"
     style={{
       width: "50%",

@@ -1,17 +1,21 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Education from "../components/education";
 import Work from "../components/work";
 import Skills from "../components/skills";
 import cv from "./cv.json";
 import profil from "../assets/photos/profil.jpeg";
-//useEffect(() => {
-//  import("bootstrap/dist/js/bootstrap");
-//}, []);
 
 export default function Home() {
+  useEffect(() => {
+    //  import("bootstrap/dist/js/bootstrap");
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className={styles.container}>
       <Head>
@@ -57,17 +61,18 @@ export default function Home() {
             Education
           </h2>
           {cv.education.map((item) => (
-            <Education key={item.headline} {...item} />
+            <Education data-Aos="fade-right" key={item.headline} {...item} />
           ))}
         </div>
 
-        <div className={styles.skillsContainer}>
+        <div data-Aos="fade-up" className={styles.skillsContainer}>
           <h2 style={{ textAlign: "center", marginBottom: 20 }}>Skills</h2>
           <div className={styles.skillCategoryContainer}>
             <div
               className="card-colums"
               style={{
                 width: "13rem",
+                flex: 1,
               }}
             >
               <h4>Coding</h4>
@@ -81,6 +86,7 @@ export default function Home() {
                 width: "13rem",
                 marginLeft: 20,
                 marginRight: 20,
+                flex: 1,
               }}
             >
               <h4>Language</h4>
@@ -92,6 +98,7 @@ export default function Home() {
               className="card-colums"
               style={{
                 width: "13rem",
+                flex: 1,
               }}
             >
               <h4>EDV</h4>
