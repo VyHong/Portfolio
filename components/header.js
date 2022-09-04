@@ -5,20 +5,19 @@ import styles from "../styles/Home.module.css";
 
 const Header = (props) => (
   <div className={styles.headerContainer}>
-    <a className="navbar-brand" href="#">
-      <Image
-        src={monogram}
-        alt=""
-        width="30"
-        height="24"
-        className="rounded align-bottom"
-      />{" "}
-      Vy Hong
+    <a
+      className="navbar-brand fw-bold d-flex flex-row align-text-bottom"
+      href="#"
+    >
+      <Image src={monogram} alt="" width="45" height="30" className="rounded" />{" "}
+      <h3 className="p-1 " style={{ color: "#eeeae3" }}>
+        Vy Hong
+      </h3>
     </a>
     <ul className="nav  justify-content-end ">
       <li className="nav-item ">
         <a
-          className="nav-link active link-dark"
+          className="nav-link active link-dark fw-bolder"
           aria-current="page"
           href="#home"
         >
@@ -26,17 +25,17 @@ const Header = (props) => (
         </a>
       </li>
       <li className="nav-item">
-        <a className="nav-link link-dark" href="#work">
+        <a className="nav-link link-dark fw-bolder" href="#work">
           Work
         </a>
       </li>
       <li className="nav-item">
-        <a className="nav-link link-dark" href="#education">
+        <a className="nav-link link-dark fw-bolder" href="#education">
           Education
         </a>
       </li>
       <li className="nav-item">
-        <a className="nav-link link-dark" href="#skills">
+        <a className="nav-link link-dark fw-bolder" href="#skills">
           Skills
         </a>
       </li>
