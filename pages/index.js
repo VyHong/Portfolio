@@ -90,8 +90,8 @@ export default function Home() {
               className="card-colums"
               style={{
                 width: "13rem",
-                marginLeft: 20,
-                marginRight: 20,
+                marginLeft: "1rem",
+                marginRight: "1rem",
                 flex: 1,
               }}
             >
