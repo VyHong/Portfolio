@@ -6,14 +6,12 @@ import styles from "../styles/Home.module.css";
 const Header = (props) => (
   <div className={styles.headerContainer}>
     <a
-      className="navbar-brand fw-bold d-flex flex-row align-text-bottom"
+      className="navbar-brand fw-bold d-flex flex-row align-text-top"
       href="#"
+      style={{ color: "#eeeae3" }}
     >
       <Image src={monogram} alt="" width="35" height="25" className="rounded" />{" "}
-      <h4 className=" " style={{ color: "#eeeae3" }}>
-        {"  "}
-        Vy Hong
-      </h4>
+      Vy Hong
     </a>
     <ul className="nav  justify-content-end ">
       <li className="nav-item ">
