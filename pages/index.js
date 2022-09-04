@@ -38,7 +38,7 @@ export default function Home() {
         <div className={styles.workingContainer}>
           <h2
             style={{
-              marginBottom: 40,
+              marginBottom: 20,
             }}
           >
             Working Experience
@@ -51,7 +51,7 @@ export default function Home() {
         <div className={styles.educationContainer}>
           <h2
             style={{
-              marginBottom: 40,
+              marginBottom: 20,
             }}
           >
             Education
@@ -62,21 +62,38 @@ export default function Home() {
         </div>
 
         <div className={styles.skillsContainer}>
-          <h2 style={{ textAlign: "center" }}>Skills</h2>
+          <h2 style={{ textAlign: "center", marginBottom: 20 }}>Skills</h2>
           <div className={styles.skillCategoryContainer}>
-            <div class="card-colums">
+            <div
+              class="card-colums"
+              style={{
+                width: "13rem",
+              }}
+            >
               <h4>Coding</h4>
               {cv.skills.coding.map((item) => (
                 <Skills key={item.headline} {...item} />
               ))}
             </div>
-            <div className="card-colums">
+            <div
+              className="card-colums"
+              style={{
+                width: "13rem",
+                marginLeft: 20,
+                marginRight: 20,
+              }}
+            >
               <h4>Language</h4>
               {cv.skills.languages.map((item) => (
                 <Skills key={item.headline} {...item} />
               ))}
             </div>
-            <div className="card-colums">
+            <div
+              className="card-colums"
+              style={{
+                width: "13rem",
+              }}
+            >
               <h4>EDV</h4>
               {cv.skills.EDV.map((item) => (
                 <Skills key={item.headline} {...item} />
