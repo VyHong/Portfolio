@@ -9,8 +9,9 @@ const Header = (props) => (
       className="navbar-brand fw-bold d-flex flex-row align-text-bottom"
       href="#"
     >
-      <Image src={monogram} alt="" width="30" height="25" className="rounded" />{" "}
-      <h4 className="p-1 " style={{ color: "#eeeae3" }}>
+      <Image src={monogram} alt="" width="35" height="25" className="rounded" />{" "}
+      <h4 className=" " style={{ color: "#eeeae3" }}>
+        {"  "}
         Vy Hong
       </h4>
     </a>
