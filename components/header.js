@@ -13,15 +13,6 @@ const Header = (props) => (
       <Image src={monogram} alt="" width="40" height="35" className="rounded" />
     </a>
     <ul className="nav  justify-content-end ">
-      <li className="nav-item ">
-        <a
-          className="nav-link active link-dark fw-bolder"
-          aria-current="page"
-          href="#home"
-        >
-          Home
-        </a>
-      </li>
       <li className="nav-item">
         <a className="nav-link link-dark fw-bolder" href="#work">
           Work
