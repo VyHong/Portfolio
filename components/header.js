@@ -37,6 +37,11 @@ const Header = (props) => (
           Skills
         </a>
       </li>
+      <li className="nav-item">
+        <a className="nav-link link-dark fw-bolder" href="#Projects">
+          Projects
+        </a>
+      </li>
     </ul>
   </div>
 );

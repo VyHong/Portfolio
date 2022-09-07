@@ -14,10 +14,11 @@ import Education from "../components/education";
 import Work from "../components/work";
 import Skills from "../components/skills";
 import Header from "../components/header";
+import ProjectCarousel from "../components/projectCarousel";
 
 export default function Home() {
   useEffect(() => {
-    //import("bootstrap/dist/js/bootstrap");
+    import("bootstrap/dist/js/bootstrap");
     Aos.init({ duration: 500 });
   }, []);
   return (
@@ -50,7 +51,6 @@ export default function Home() {
             </span>
           </div>
         </div>
-
         <div id="work" className={styles.workingContainer}>
           <h2
             style={{
@@ -63,7 +63,6 @@ export default function Home() {
             <Work key={item.headline} {...item} />
           ))}
         </div>
-
         <div id="education" className={styles.educationContainer}>
           <h2
             style={{
@@ -76,7 +75,6 @@ export default function Home() {
             <Education key={item.headline} {...item} />
           ))}
         </div>
-
         <div id="skills" data-aos="fade-up" className={styles.skillsContainer}>
           <h2 style={{ textAlign: "center", marginBottom: 20 }}>Skills</h2>
           <div className={styles.skillCategoryContainer}>
@@ -119,6 +117,16 @@ export default function Home() {
                 <Skills key={item.headline} {...item} />
               ))}
             </div>
+          </div>
+        </div>
+        <div
+          id="Projects"
+          className={styles.projectsContainer}
+          data-aos="fade-up"
+        >
+          <h2 style={{ textAlign: "center", marginBottom: 20 }}>Projects</h2>
+          <div className={styles.carouselContainer}>
+            <ProjectCarousel />
           </div>
         </div>
       </main>
