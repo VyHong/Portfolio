@@ -81,6 +81,7 @@ function projectCarousel(props) {
               <a
                 href="https://github.com/VyHong/Portfolio"
                 className="btn btn-primary"
+                rel="noopener noreferrer"
               >
                 Check out on Github
               </a>
