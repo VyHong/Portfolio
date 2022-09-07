@@ -94,7 +94,7 @@ function projectCarousel(props) {
             <div className="card-body m-5 ">
               <h5 className="card-title text-center ">Coming soon</h5>
               <p className="card-text mt-3 text-center">
-                I'm always interested in trying out new technologies so there
+                I am always interested in trying out new technologies so there
                 will be more to come
               </p>
             </div>
