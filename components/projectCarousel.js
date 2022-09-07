@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import portfolio from "../assets/photos/portfolio.png";
-import stockapp from "../assets/photos/stocks.PNG";
+import stockapp from "../assets/photos/stocks.png";
 function projectCarousel(props) {
   return (
     <div
