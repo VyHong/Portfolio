@@ -53,6 +53,7 @@ function projectCarousel(props) {
               </p>
               <a
                 target={"_blank"}
+                rel="noopener noreferrer"
                 href="https://github.com/VyHong/FirstApp"
                 className="btn btn-primary"
               >
