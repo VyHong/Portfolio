@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/projects.module.css";
 import portfolio from "../assets/photos/portfolio.png";
 import stockapp from "../assets/photos/stocks.png";
 function projectCarousel(props) {
   return (
     <div
       id="projectCarousel"
-      className="carousel carousel-dark slide h-80"
+      className="carousel carousel-dark slide d-flex justify-content-center"
       //data-bs-ride="carousel"
       data-bs-interval="10000"
     >
@@ -33,17 +33,16 @@ function projectCarousel(props) {
           aria-label="Slide 3"
         ></button>
       </div>
-      <div className="carousel-inner">
-        <div className="carousel-item active ">
+      <div className="carousel-inner shadow rounded w-100 ">
+        <div className="carousel-item active   ">
           <div className={styles.projectCard}>
             <Image
               src={stockapp}
               alt="Profil"
-              width={1300}
-              height="100%"
-              className="img-fluid rounded-start "
+              width={300}
+              className="rounded-start "
             />
-            <div className="card-body m-4">
+            <div className={styles.cardText}>
               <h5 className="card-title">Stock App (W.I.P)</h5>
               <p className="card-text mt-3">
                 Based on the React-Native framework I created an app to play
@@ -66,14 +65,13 @@ function projectCarousel(props) {
           <div className={styles.projectCard}>
             <Image
               src={portfolio}
-              alt="Profil"
-              width={1300}
-              height="100%"
-              className="img-fluid rounded-start "
+              alt="portfolio"
+              className="rounded-start"
+              width={300}
             />
-            <div className="card-body m-4">
-              <h5 className="card-title">Portfolio </h5>
-              <p className="card-text mt-3">
+            <div className={styles.cardText}>
+              <h5>Portfolio </h5>
+              <p>
                 Using the React framework with Next.js I created this portfolio
                 in order to have a centralized website where I can refer to my
                 different projects. Currently hosted by Vercel
@@ -91,7 +89,7 @@ function projectCarousel(props) {
 
         <div className="carousel-item ">
           <div className={styles.projectCard}>
-            <div className="card-body m-5 ">
+            <div className={styles.cardText}>
               <h5 className="card-title text-center ">Coming soon</h5>
               <p className="card-text mt-3 text-center">
                 I am always interested in trying out new technologies so there

@@ -8,13 +8,13 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import cv from "./cv.json";
 import profil from "../assets/photos/profil.jpeg";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/index.module.css";
 
 import Education from "../components/education";
 import Work from "../components/work";
 import Skills from "../components/skills";
 import Header from "../components/header";
-import ProjectCarousel from "../components/projectCarousel";
+import Projects from "../components/projects";
 
 export default function Home() {
   useEffect(() => {
@@ -51,84 +51,10 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div id="work" className={styles.workingContainer}>
-          <h2
-            style={{
-              marginBottom: 20,
-            }}
-          >
-            Working Experience
-          </h2>
-          {cv.work.map((item) => (
-            <Work key={item.headline} {...item} />
-          ))}
-        </div>
-        <div id="education" className={styles.educationContainer}>
-          <h2
-            style={{
-              marginBottom: 20,
-            }}
-          >
-            Education
-          </h2>
-          {cv.education.map((item) => (
-            <Education key={item.headline} {...item} />
-          ))}
-        </div>
-        <div id="skills" data-aos="fade-up" className={styles.skillsContainer}>
-          <h2 style={{ textAlign: "center", marginBottom: 20 }}>Skills</h2>
-          <div className={styles.skillCategoryContainer}>
-            <div
-              className="card-colums"
-              style={{
-                width: "13rem",
-                flex: 1,
-              }}
-            >
-              <h4>Coding</h4>
-              {cv.skills.coding.map((item) => (
-                <Skills key={item.headline} {...item} />
-              ))}
-            </div>
-            <div
-              className="card-colums"
-              style={{
-                width: "13rem",
-                flex: 1,
-                marginLeft: "1rem",
-                marginRight: "1rem",
-              }}
-            >
-              <h4>EDV</h4>
-              {cv.skills.EDV.map((item) => (
-                <Skills key={item.headline} {...item} />
-              ))}
-            </div>
-            <div
-              className="card-colums"
-              style={{
-                width: "13rem",
-
-                flex: 1,
-              }}
-            >
-              <h4>Language</h4>
-              {cv.skills.languages.map((item) => (
-                <Skills key={item.headline} {...item} />
-              ))}
-            </div>
-          </div>
-        </div>
-        <div
-          id="Projects"
-          className={styles.projectsContainer}
-          data-aos="fade-up"
-        >
-          <h2 style={{ textAlign: "center", marginBottom: 20 }}>Projects</h2>
-          <div className={styles.carouselContainer}>
-            <ProjectCarousel />
-          </div>
-        </div>
+        <Work />
+        <Education />
+        <Skills />
+        <Projects />
       </main>
 
       <footer className={styles.footer}>

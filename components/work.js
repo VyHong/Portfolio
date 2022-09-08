@@ -1,21 +1,23 @@
-const Work = (props) => (
-  <div
-    data-aos="fade-right"
-    className="card shadow-sm mb-1 bg-white rounded"
-    style={{
-      width: "90%",
-      textAlign: "left",
-      marginTop: 10,
-    }}
-  >
-    <div className="card-body ">
-      <h5 className="card-title">{props.name}</h5>
-      <h6 className="card-subtitle mb-2 text-muted">{props.position}</h6>
-      <h5 className="card-subtitle mb-2 text-muted">
-        {props.location}, {props.date}
-      </h5>
-      <p className="card-text">{props.activities}</p>
+import React from "react";
+import WorkCard from "../components/workCard";
+import cv from "../pages/cv.json";
+import styles from "../styles/work.module.css";
+
+function work(props) {
+  return (
+    <div id="work" className={styles.workingContainer}>
+      <h2
+        style={{
+          marginBottom: 20,
+        }}
+      >
+        Working Experience
+      </h2>
+      {cv.work.map((item) => (
+        <WorkCard key={item.headline} {...item} />
+      ))}
     </div>
-  </div>
-);
-export default Work;
+  );
+}
+
+export default work;

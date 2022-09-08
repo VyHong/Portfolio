@@ -1,0 +1,29 @@
+.projectsContainer{padding: 1rem 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 20rem;
+    flex: 1;
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+   
+  }
+  
+  .projectCard{
+    background-color: rgb(221,214,206);
+    justify-content: space-between;   
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+  } 
+
+.cardText{
+  margin: 1rem;
+  align-self: center;
+  width: 100;
+  flex: 1;
+ min-width: 13rem;
+}

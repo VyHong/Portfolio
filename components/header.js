@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import monogram from "../assets/photos/Monogram.png";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/header.module.css";
 
 const Header = (props) => (
   <div className={styles.headerContainer}>

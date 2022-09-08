@@ -1,0 +1,15 @@
+.skillsContainer{
+    background-color: rgb(221,214,206);
+    flex:1;
+    max-height: 40rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .skillCategoryContainer{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+  }
