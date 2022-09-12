@@ -1,9 +1,9 @@
 interface cardProps {
   title: string;
   subtitle: string;
-  location: string;
-  date: string;
-  description: string;
+  location?: string;
+  date?: string;
+  description?: string;
   className?: string;
 }
 
@@ -15,9 +15,13 @@ const Card = (props: cardProps) => (
     <div className="card-body">
       <h2 className="card-title">{props.title}</h2>
       <p className="mb-2">{props.subtitle}</p>
-      <p className="mb-2">
-        {props.location}, {props.date}
-      </p>
+
+      {(props.location || props.date) && (
+        <p className="mb-2">
+          {props.location}, {props.date}
+        </p>
+      )}
+
       {props.description && <p>{props.description}</p>}
     </div>
   </div>

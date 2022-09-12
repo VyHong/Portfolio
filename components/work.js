@@ -4,8 +4,8 @@ import Card from "./card.tsx";
 
 function Work() {
   return (
-    <section id="work" className="p-10 bg-base-200">
-      <h2 className="text-2xl mb-5">Working Experience</h2>
+    <section id="work" className="section">
+      <h2 className="font-bold text-2xl mb-5">Working Experience</h2>
 
       <div className="space-y-5">
         {cv.work.map((item) => (

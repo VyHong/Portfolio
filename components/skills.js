@@ -1,51 +1,41 @@
 import React from "react";
-import SkillCard from "../components/skillCard";
+import SkillCard from "./skillCard";
 import cv from "../pages/cv.json";
-import styles from "../styles/skills.module.css";
 
-function skills(props) {
+function skills() {
   return (
-    <div id="skills" data-aos="fade-up" className={styles.skillsContainer}>
-      <h2 style={{ textAlign: "center", marginBottom: 20 }}>Skills</h2>
-      <div className={styles.skillCategoryContainer}>
-        <div
-          className="card-colums"
-          style={{
-            width: "13rem",
-            flex: 1,
-          }}
-        >
-          <h4>Coding</h4>
-          {cv.skills.coding.map((item) => (
-            <SkillCard key={item.headline} {...item} />
-          ))}
-        </div>
-        <div
-          className="card-colums"
-          style={{
-            width: "13rem",
-            flex: 1,
-            marginLeft: "1rem",
-            marginRight: "1rem",
-          }}
-        >
-          <h4>EDV</h4>
-          {cv.skills.EDV.map((item) => (
-            <SkillCard key={item.headline} {...item} />
-          ))}
-        </div>
-        <div
-          className="card-colums"
-          style={{
-            width: "13rem",
+    <div id="skills" data-aos="fade-up" className="section">
+      <h2 className="font-bold text-2xl text-center mb-5">Skills</h2>
 
-            flex: 1,
-          }}
-        >
-          <h4>Language</h4>
-          {cv.skills.languages.map((item) => (
-            <SkillCard key={item.headline} {...item} />
-          ))}
+      <div className="flex flex-row justify-around space-x-5">
+        <div className="flex-1">
+          <h3 className="text-xl mb-5">Coding</h3>
+
+          <div className="space-y-5">
+            {cv.skills.coding.map((item) => (
+              <SkillCard key={item.name} {...item} />
+            ))}
+          </div>
+        </div>
+
+        <div className="flex-1">
+          <h3 className="text-xl mb-5">EDV</h3>
+
+          <div className="space-y-5">
+            {cv.skills.EDV.map((item) => (
+              <SkillCard key={item.name} {...item} />
+            ))}
+          </div>
+        </div>
+
+        <div className="flex-1">
+          <h3 className="text-xl mb-5">Language</h3>
+
+          <div className="space-y-5">
+            {cv.skills.languages.map((item) => (
+              <SkillCard key={item.name} {...item} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

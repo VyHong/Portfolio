@@ -4,8 +4,8 @@ import Card from "./card.tsx";
 
 function education() {
   return (
-    <section id="education" className="p-10 bg-base-200">
-      <h2 className="text-right text-2xl mb-5">Education</h2>
+    <section id="education" className="section">
+      <h2 className="font-bold text-right text-2xl mb-5">Education</h2>
 
       <div className="space-y-5">
         {cv.education.map((item) => (
