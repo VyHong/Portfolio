@@ -14,7 +14,7 @@ const Card = (props: cardProps) => (
   >
     <div className="card-body">
       <h2 className="card-title">{props.title}</h2>
-      <p className="mb-2">{props.subtitle}</p>
+      <p>{props.subtitle}</p>
 
       {(props.location || props.date) && (
         <p className="mb-2">

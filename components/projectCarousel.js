@@ -35,18 +35,23 @@ function projectCarousel() {
           className="carousel-item relative w-full"
         >
           <div className="mx-20 card card-side w-full bg-base-100 shadow-xl">
-            <Image
-              src={item.image}
-              alt={item.title}
-              className="rounded-start"
-            />
+            <figure>
+              <Image
+                src={item.image}
+                alt={item.title}
+                className="rounded-start"
+              />
+            </figure>
+
             <div className="card-body">
               <h2 className="card-title">{item.title}</h2>
               <p>{item.description}</p>
 
-              <div className="card-actions justify-end">
-                <button class="btn btn-primary">Check out on Github</button>
-              </div>
+              {item.link && (
+                <div className="card-actions justify-end">
+                  <button class="btn btn-primary">Check out on Github</button>
+                </div>
+              )}
             </div>
           </div>
 
