@@ -34,7 +34,7 @@ function projectCarousel() {
           id={`slide${index + 1}`}
           className="carousel-item relative w-full"
         >
-          <div className="mx-20 card card-side w-full bg-base-100 shadow-xl">
+          <div className="lg:mx-20 card lg:card-side w-full bg-base-100 shadow-xl">
             <figure>
               <Image
                 src={item.image}
@@ -55,7 +55,7 @@ function projectCarousel() {
             </div>
           </div>
 
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 lg:left-0 lg:right-0 top-1/2">
             <a
               href={`#slide${index == 0 ? items.length : index}`}
               className="btn btn-circle"

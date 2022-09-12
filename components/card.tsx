@@ -12,15 +12,17 @@ const Card = (props: cardProps) => (
     data-aos="fade-right"
     className={"card bg-base-100 shadow-xl " + props.className}
   >
-    <div className="card-body">
-      <h2 className="card-title">{props.title}</h2>
-      <p>{props.subtitle}</p>
+    <div className="card-body gap-0 space-y-2">
+      <div>
+        <h2 className="card-title">{props.title}</h2>
+        <p className="text-sm">{props.subtitle}</p>
 
-      {(props.location || props.date) && (
-        <p className="mb-2">
-          {props.location}, {props.date}
-        </p>
-      )}
+        {(props.location || props.date) && (
+          <p>
+            {props.location}, {props.date}
+          </p>
+        )}
+      </div>
 
       {props.description && <p>{props.description}</p>}
     </div>

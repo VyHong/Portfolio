@@ -6,4 +6,12 @@
   .section {
     @apply p-10 bg-base-300 my-20 shadow-xl;
   }
+
+  .card {
+    @apply rounded-md;
+  }
+
+  .card-body {
+    @apply p-3;
+  }
 }

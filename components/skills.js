@@ -7,7 +7,7 @@ function skills() {
     <div id="skills" data-aos="fade-up" className="section">
       <h2 className="font-bold text-2xl text-center mb-5">Skills</h2>
 
-      <div className="flex flex-row justify-around space-x-5">
+      <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-5">
         <div className="flex-1">
           <h3 className="text-xl mb-5">Coding</h3>
 
