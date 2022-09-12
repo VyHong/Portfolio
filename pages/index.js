@@ -6,7 +6,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-import cv from "./cv.json";
 import profil from "../assets/photos/profil.jpeg";
 import styles from "../styles/index.module.css";
 
@@ -18,9 +17,9 @@ import Projects from "../components/projects";
 
 export default function Home() {
   useEffect(() => {
-    import("bootstrap/dist/js/bootstrap");
     Aos.init({ duration: 500 });
   }, []);
+
   return (
     <div className={styles.container}>
       <Head>
