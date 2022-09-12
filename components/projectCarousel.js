@@ -35,13 +35,15 @@ function projectCarousel() {
           className="carousel-item relative w-full"
         >
           <div className="lg:mx-20 card lg:card-side w-full bg-base-100 shadow-xl">
-            <figure>
-              <Image
-                src={item.image}
-                alt={item.title}
-                className="rounded-start"
-              />
-            </figure>
+            {item.image && (
+              <figure>
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  className="rounded-start"
+                />
+              </figure>
+            )}
 
             <div className="card-body">
               <h2 className="card-title">{item.title}</h2>
