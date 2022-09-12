@@ -3,8 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Aos from "aos";
-import "aos/dist/aos.css";
-import "bootstrap/dist/css/bootstrap.css";
+// import "aos/dist/aos.css";
+// import "bootstrap/dist/css/bootstrap.css";
 
 import profil from "../assets/photos/profil.jpeg";
 import styles from "../styles/index.module.css";
@@ -28,28 +28,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main id="home" className={styles.main}>
-        <div className={styles.topContainer}>
-          <Header />
-          <div className={styles.topContent}>
-            <span>
-              <h1>Hello, I am Vy </h1>
-              <h5 className="text-muted">
-                Student in Information Systems
-                <br /> at Technical University München
-              </h5>
-            </span>
-            <span style={{ alignSelf: "center" }}>
-              <Image
-                src={profil}
-                alt="Profil"
-                width={200}
-                height={200}
-                className="rounded"
-              />
-            </span>
+      <Header />
+
+      <main id="home" className="bg-base-200">
+        <div className="hero bg-base-200">
+          <div className="hero-content flex-col lg:flex-row-reverse">
+            <Image
+              src={profil}
+              alt="Profil"
+              width={200}
+              height={200}
+              className="rounded"
+            />
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl font-bold">Hello, I am Vy </h1>
+              <p className="py-6">
+                Student in Information Systems at Technical University München
+              </p>
+            </div>
           </div>
         </div>
+
         <Work />
         <Education />
         <Skills />
