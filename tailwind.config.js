@@ -11,7 +11,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        mytheme: {
+        default: {
           primary: "#6419E6",
           secondary: "#D926A9",
           accent: "#1FB2A6",
@@ -23,6 +23,9 @@ module.exports = {
           error: "#F87272",
         },
       },
+      "light",
+      "dark",
+      "valentine",
     ],
   },
 };
