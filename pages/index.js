@@ -29,7 +29,7 @@ export default function Home() {
       <Header />
 
       <main id="home">
-        <div className="hero bg-base-300">
+        <div className="hero bg-base-300 ">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <Image
               src={profil}

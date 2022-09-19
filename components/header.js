@@ -47,7 +47,7 @@ const MenuItems = () => (
 
 const Header = () => (
   <>
-    <header className="navbar bg-base-300">
+    <header className="navbar bg-base-300 justify-between">
       <div className="navbar-start">
         <a className="btn btn-ghost normal-case text-xl">
           <Image
@@ -59,14 +59,14 @@ const Header = () => (
           />
         </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <MenuItems />
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end lg:hidden">
         <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"

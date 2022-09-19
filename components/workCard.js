@@ -1,6 +1,5 @@
 const WorkCard = (props) => (
-  <Card
-  />
+  //<Card/>
   <div data-aos="fade-right" className="mr-10 card bg-base-100 shadow-xl">
     <div className="card-body">
       <h2 className="card-title">{props.name}</h2>
