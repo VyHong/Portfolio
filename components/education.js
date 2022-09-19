@@ -1,22 +1,26 @@
 import React from "react";
-import EducationCard from "../components/educationCard";
 import cv from "../pages/cv.json";
-import styles from "../styles/education.module.css";
+import Card from "./card.tsx";
 
-function education(props) {
+function education() {
   return (
-    <div id="education" className={styles.educationContainer}>
-      <h2
-        style={{
-          marginBottom: 20,
-        }}
-      >
-        Education
-      </h2>
-      {cv.education.map((item) => (
-        <EducationCard key={item.headline} {...item} />
-      ))}
-    </div>
+    <section id="education" className="section">
+      <h2 className="font-bold text-right text-2xl mb-5">Education</h2>
+
+      <div className="space-y-5">
+        {cv.education.map((item) => (
+          <Card
+            key={item.name}
+            title={item.name}
+            subtitle={item.degree}
+            location={item.location}
+            date={item.date}
+            description={item.description}
+            className="ml-20"
+          />
+        ))}
+      </div>
+    </section>
   );
 }
 

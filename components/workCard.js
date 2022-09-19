@@ -1,21 +1,15 @@
-const Work = (props) => (
-  <div
-    data-aos="fade-right"
-    className="card shadow-sm mb-1 bg-white rounded"
-    style={{
-      width: "90%",
-      textAlign: "left",
-      marginTop: 10,
-    }}
-  >
-    <div className="card-body ">
-      <h5 className="card-title">{props.name}</h5>
-      <h6 className="card-subtitle mb-2 text-muted">{props.position}</h6>
-      <h5 className="card-subtitle mb-2 text-muted">
+const WorkCard = (props) => (
+  <Card
+  />
+  <div data-aos="fade-right" className="mr-10 card bg-base-100 shadow-xl">
+    <div className="card-body">
+      <h2 className="card-title">{props.name}</h2>
+      <p className="mb-2">{props.position}</p>
+      <p className="mb-2">
         {props.location}, {props.date}
-      </h5>
-      <p className="card-text">{props.activities}</p>
+      </p>
+      <p>{props.activities}</p>
     </div>
   </div>
 );
-export default Work;
+export default WorkCard;

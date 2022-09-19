@@ -1,23 +1,27 @@
 import React from "react";
-import WorkCard from "../components/workCard";
 import cv from "../pages/cv.json";
-import styles from "../styles/work.module.css";
+import Card from "./card.tsx";
 
-function work(props) {
+function Work() {
   return (
-    <div id="work" className={styles.workingContainer}>
-      <h2
-        style={{
-          marginBottom: 20,
-        }}
-      >
-        Working Experience
-      </h2>
-      {cv.work.map((item) => (
-        <WorkCard key={item.headline} {...item} />
-      ))}
-    </div>
+    <section id="work" className="section">
+      <h2 className="font-bold text-2xl mb-5">Working Experience</h2>
+
+      <div className="space-y-5">
+        {cv.work.map((item) => (
+          <Card
+            key={item.headline}
+            title={item.name}
+            subtitle={item.position}
+            location={item.location}
+            date={item.date}
+            description={item.activities}
+            className="mr-20"
+          />
+        ))}
+      </div>
+    </section>
   );
 }
 
-export default work;
+export default Work;

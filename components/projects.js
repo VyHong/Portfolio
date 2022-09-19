@@ -1,10 +1,10 @@
 import React from "react";
 import ProjectCarousel from "./projectCarousel";
-import styles from "../styles/projects.module.css";
-function projects(props) {
+
+function projects() {
   return (
-    <div id="Projects" className={styles.projectsContainer} data-aos="fade-up">
-      <h2 style={{ textAlign: "center", marginBottom: 20 }}>Projects</h2>
+    <div id="projects" className="section" data-aos="fade-up">
+      <h2 className="font-bold text-2xl text-center mb-5">Projects</h2>
       <ProjectCarousel />
     </div>
   );
