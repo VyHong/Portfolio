@@ -5,6 +5,14 @@
       "name": "Technical University of Munich",
       "location": "Munich",
       "position": "Academic Tutor",
+      "date": "September 2022",
+      "activities": "Math Preparation Course"
+    },
+
+    {
+      "name": "Technical University of Munich",
+      "location": "Munich",
+      "position": "Academic Tutor",
       "date": "October 2020 – October 2021",
       "activities": "Math Preparation Course, Introduction to Informatics, Practica Basics of Programming and Introduction into Software Engineering"
     },
@@ -23,6 +31,14 @@
       "position": "Student Intern",
       "date": "July 2016",
       "activities": "Industrie 4.0 and Internet of Things"
+    },
+
+    {
+      "name": "Herz-Jesu-Church",
+      "location":"Aschaffenburg",
+      "position":"Groupleader",
+      "date":"April 2016 - May 2017",
+      "activities":"Organizing Summer Camp for school kids"
     }
   ],
 
@@ -53,7 +69,7 @@
   "skills":{
     "coding":[
       {"name":"Java","level": "Fluent"},
-      {"name":"Phython","level": "Fluent"},
+      {"name":"Python","level": "Fluent"},
       {"name":"JavaScript","level": "Fluent"},
       {"name":"SQL","level": "Proficient"},
       {"name":"R","level": "Proficient"}
