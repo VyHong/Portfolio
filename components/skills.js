@@ -5,11 +5,11 @@ import cv from "../pages/cv.json";
 function skills() {
   return (
     <div id="skills" data-aos="fade-up" className="section">
-      <h2 className="font-bold text-2xl text-center mb-5">Skills</h2>
+      <h2 className="font-bold text-2xl text-center ">Skills</h2>
 
-      <div className="flex flex-row flex-wrap space-y-0 space-x-2 lg:space-y-0 lg:flex-row lg:space-x-5">
+      <div className="flex flex-row flex-wrap space-y-0 space-x-5 lg:space-y-0 lg:flex-row lg:space-x-5">
         <div className="flex-1">
-          <h3 className="text-xl mb-5">Coding</h3>
+          <h3 className="text-xl mb-5 mt-5">Coding</h3>
 
           <div className="space-y-5">
             {cv.skills.coding.map((item) => (
@@ -18,8 +18,8 @@ function skills() {
           </div>
         </div>
 
-        <div className="flex-1">
-          <h3 className="text-xl mb-5">EDV</h3>
+        <div className="flex-1 ">
+          <h3 className="text-xl mb-5 mt-5">EDV</h3>
 
           <div className="space-y-5">
             {cv.skills.EDV.map((item) => (
@@ -28,8 +28,8 @@ function skills() {
           </div>
         </div>
 
-        <div className="flex-1">
-          <h3 className="text-xl mb-5">Language</h3>
+        <div className="flex-1 ">
+          <h3 className="text-xl mb-5 mt-5">Language</h3>
 
           <div className="space-y-5">
             {cv.skills.languages.map((item) => (
