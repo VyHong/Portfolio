@@ -10,7 +10,7 @@ interface cardProps {
 const Card = (props: cardProps) => (
   <div
     data-aos="fade-right"
-    className={"card bg-base-100 shadow-xl " + props.className}
+    className={"card bg-base-100 shadow-xl" + props.className}
   >
     <div className="card-body gap-0 space-y-2">
       <div>
