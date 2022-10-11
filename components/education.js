@@ -4,7 +4,7 @@ import Card from "./educationCard.tsx";
 
 function education() {
   return (
-    <section id="education" className="section">
+    <section id="education" className="section overflow-hidden">
       <h2 className="font-bold text-right text-2xl mb-5">Education</h2>
 
       <div className="space-y-5">
