@@ -25,7 +25,7 @@ module.exports = {
       },
       "light",
       "dark",
-      "valentine",
+      "coffee",
     ],
   },
 };

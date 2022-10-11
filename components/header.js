@@ -10,7 +10,7 @@ const menuItems = [
 ];
 
 // see `tailwind.config.js`
-const themes = ["default", "light", "dark", "valentine"];
+const themes = ["default", "light", "dark", "coffee"];
 
 const MenuItems = () => (
   <>
