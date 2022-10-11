@@ -4,7 +4,7 @@ import cv from "../pages/cv.json";
 
 function skills() {
   return (
-    <div id="skills" data-aos="fade-up" className="section">
+    <div id="skills" data-aos="fade-up" className="section pr-5">
       <h2 className="font-bold text-2xl text-center ">Skills</h2>
 
       <div className="flex flex-row flex-wrap space-y-0 space-x-0 lg:space-y-0 lg:flex-row lg:space-x-5">

@@ -16,7 +16,7 @@ function Work() {
             location={item.location}
             date={item.date}
             description={item.activities}
-            className="lg: mr-20"
+            className="mr-0 lg:mr-20"
           />
         ))}
       </div>
