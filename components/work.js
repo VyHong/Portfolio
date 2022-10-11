@@ -1,6 +1,6 @@
 import React from "react";
 import cv from "../pages/cv.json";
-import Card from "./card.tsx";
+import Card from "./workCard.tsx";
 
 function Work() {
   return (
