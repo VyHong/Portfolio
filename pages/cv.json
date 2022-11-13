@@ -2,11 +2,11 @@
   "name": "Vy Hong",
   "work": [
     {
-      "name": "TUM AI",
+      "name": "BMW",
       "location": "Munich",
-      "position": "Participant",
-      "date": "October 2022 – Now",
-      "activities": "Ideation and creation of a startup in the Artificial Intelligence space"
+      "position": "Data Scientist",
+      "date": "November 2022 – Now",
+      "activities": "Process optimization for electrical motor assembly"
     },
     {
       "name": "Technical University of Munich",
@@ -22,14 +22,6 @@
       "position": "Academic Tutor",
       "date": "October 2020 – October 2021",
       "activities": "Math Preparation Course, Introduction to Informatics, Practica Basics of Programming and Introduction into Software Engineering"
-    },
-
-    {
-      "name": "McDonald's Deutschland GmbH",
-      "location": "Kleinostheim",
-      "position": "Temporary Worker",
-      "date": "August 2018 – August 2019",
-      "activities": "Daily tasks in system gastronomy"
     },
 
     {
@@ -84,7 +76,7 @@
     ],
     "languages":[
       {"name":"German","level": "Native"},
-      {"name":"English","level": "C1"}
+      {"name":"English","level": "C1 (TOEFL 110)"}
     ],
     "EDV":[
       {"name":"Microsoft Word","level": "Very Good"},
