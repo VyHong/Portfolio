@@ -16,7 +16,7 @@ function education() {
             location={item.location}
             date={item.date}
             description={item.description}
-            className="ml-0 lg:ml-20"
+            className="ml-0 lg:ml-96"
           />
         ))}
       </div>
