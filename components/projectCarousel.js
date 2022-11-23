@@ -9,14 +9,14 @@ const items = [
     title: "Stock App (W.I.P)",
     description:
       " Based on the React-Native framework I created an app to play around with the representation of stock data by connecting the application to the AlphaVantage API and using various charting libraries.",
-    link: "#",
+    link: "https://github.com/VyHong/FirstApp",
   },
   {
     image: portfolio,
     title: "Portfolio",
     description:
       "Using the React framework with Next.js I created this portfolio in order to have a centralized website where I can refer to my different projects. Currently hosted by Vercel",
-    link: "#",
+    link: "https://github.com/VyHong/Portfolio",
   },
   {
     title: "Coming soon",
@@ -51,7 +51,7 @@ function projectCarousel() {
 
               {item.link && (
                 <div className="card-actions justify-end">
-                  <button class="btn btn-primary">Check out on Github</button>
+                  <a class="btn btn-primary" href={item.link}>Check out on Github</a>
                 </div>
               )}
             </div>
