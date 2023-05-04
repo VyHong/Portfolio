@@ -4,16 +4,16 @@
     {
       "name": "Amazon",
       "location": "Munich",
-      "position": "Technical Account Management",
+      "position": "Technical Account Manager",
       "date": "April 2023 – Now",
-      "activities": "Managing Merchant relations \n Streamlining KYC Process\n Automating Information Retrieval"
+      "activities": "Managing Merchant relations, Streamlining KYC Process, Automating Information Retrieval"
     },
     {
       "name": "BMW",
       "location": "Munich",
       "position": "Data Scientist",
       "date": "November 2022 – February 2022",
-      "activities": "Full Stack Software Development \n Preprocessing Data and building Data Pipelines(Python,PySpark)\n Calculating KPI for Battery Poduction Line\n Visualization (Javascript, SQL)"
+      "activities": "Full Stack Software Development, Preprocessing Data and building Data Pipelines(Python,PySpark), Calculating KPI for Battery Poduction Line, Visualization (Javascript, SQL)"
     },
     {
       "name": "TUM AI",
@@ -25,17 +25,17 @@
     {
       "name": "Technical University of Munich",
       "location": "Munich",
-      "position": "Academic Tutor",
+      "position": "Teaching Assistant",
       "date": "September 2022",
-      "activities": "Math Preparation Course"
+      "activities": "Math Preparation Course - Holding classes for new students "
     },
 
     {
       "name": "Technical University of Munich",
       "location": "Munich",
-      "position": "Academic Tutor",
+      "position": "Teaching Assistant",
       "date": "October 2020 – October 2021",
-      "activities": "Math Preparation Course, Introduction to Informatics, Practica Basics of Programming and Introduction into Software Engineering"
+      "activities": "Math Preparation Course, Introduction to Informatics, Practica Basics of Programming and Introduction into Software Engineering - Holding classes, correcting homework and grading exams "
     },
 
     {
