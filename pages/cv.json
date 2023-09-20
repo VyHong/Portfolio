@@ -2,11 +2,32 @@
   "name": "Vy Hong",
   "work": [
     {
+      "name": "UniCredit",
+      "location": "Munich",
+      "position": "Machine Learning Engineer",
+      "date": "September 2023 - Now",
+      "activities": "Applying sentiment analysis on corporate customer relevant news"
+    },
+    {
+      "name": "TUM AI",
+      "location": "Munich",
+      "position": "Community Department - Teamlead",
+      "date": "September 2023 - Now",
+      "activities": "Taking over the department organization and goal setting"
+    },
+    {
       "name": "Amazon",
       "location": "Munich",
-      "position": "Technical Account Manager",
-      "date": "April 2023 – Now",
-      "activities": "Managing Merchant relations, Streamlining KYC Process, Automating Information Retrieval"
+      "position": "Working Student",
+      "date": "April 2023 – September 2023",
+      "activities": "Data Analysis and Transformation (ETL, SQL), Implementing EU-wide reporting, Automating Business Performance Review, Setting up Knowledge Hub in Intranet (Html, Bootstrap)"
+    },
+    {
+      "name": "TUM AI",
+      "location": "Munich",
+      "position": "Community Department - Member",
+      "date": "Mai 2023 – September 2023",
+      "activities": "With over 170 active members, TUM.ai is Germany's leading AI student initiative, located in Munich"
     },
     {
       "name": "BMW",
@@ -14,13 +35,6 @@
       "position": "Data Scientist",
       "date": "November 2022 – February 2022",
       "activities": "Full Stack Software Development, Preprocessing Data and building Data Pipelines(Python,PySpark), Calculating KPI for Battery Poduction Line, Visualization (Javascript, SQL)"
-    },
-    {
-      "name": "TUM AI",
-      "location": "Munich",
-      "position": "Participant",
-      "date": "October 2022",
-      "activities": "Ideation and creation of a startup in the Artificial Intelligence space"
     },
     {
       "name": "Technical University of Munich",
@@ -59,7 +73,7 @@
     {
       "name": "Technical University of Munich",
       "location": "Munich",
-      "degree": "B.Sc. Information Systems (expected 1.9)",
+      "degree": "B.Sc. Information Systems (expected 1.8)",
       "date": "October 2019 – Now",
       "description": "Focus on technical and mathematical field"
     },
@@ -81,10 +95,10 @@
 
   "skills":{
     "coding":[
-      {"name":"Java","level": "Fluent"},
-      {"name":"Python","level": "Fluent"},
-      {"name":"JavaScript","level": "Fluent"},
-      {"name":"SQL","level": "Proficient"},
+      {"name":"Java","level": "Good"},
+      {"name":"Python","level": "Very Good"},
+      {"name":"JavaScript","level": "Good"},
+      {"name":"SQL","level": "Very Good"},
       {"name":"R","level": "Proficient"}
       
     ],
@@ -94,12 +108,9 @@
     ],
     "EDV":[
       {"name":"Microsoft Word","level": "Very Good"},
-      {"name":"Microsoft Excel","level": " Good"},
+      {"name":"Microsoft Excel","level": " Very Good"},
       {"name":"Microsoft Powerpoint","level": " Good"},
       {"name":"Tableau","level": "Very Good"}
     ]
   }
-    
-
-  
 }
